@@ -8,6 +8,6 @@ import (
 func main() {
 	str := "ddЯЙ描"
 
-	fmt.Println(len(str))                    // bytes not runes
-	fmt.Println(utf8.RuneCountInString(str)) //5
+	fmt.Println(len(str))
+	fmt.Println(utf8.RuneCountInString(str))
 }

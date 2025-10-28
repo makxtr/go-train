@@ -10,9 +10,9 @@ func main() {
 	initialBalance := 1000
 	account := &Account{Balance: initialBalance}
 
-	defer printBalance("Изначальный баланс", account.Balance) // 1000
-	defer printBalance("Текущий баланс", account.Balance)     // 1000
-	defer printAccountBalance("Указатель на баланс", account) // 300
+	defer printBalance("Изначальный баланс", account.Balance)
+	defer printBalance("Текущий баланс", account.Balance)
+	defer printAccountBalance("Указатель на баланс", account)
 
 	account.Balance += 500
 	updateBalance(account, 200)

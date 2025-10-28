@@ -16,12 +16,12 @@ func main() {
 	array := [3]int{1, 2, 3}
 	slice := array[:]
 
-	fmt.Println("Before modifyArray:", array) // 1, 2, 3
-	modifyArray(array)                        // 10, 2, 3
-	fmt.Println("After modifyArray:", array)  // 1, 2, 3
+	fmt.Println("Before modifyArray:", array)
+	modifyArray(array)
+	fmt.Println("After modifyArray:", array)
 
-	fmt.Println("Before modifySlice:", slice) // 1 2 3
-	modifySlice(slice)                        // 10 2 3
-	fmt.Println("After modifySlice:", slice)  // 10 2 3
-	fmt.Println("Final array:", array)        // 10 2 3
+	fmt.Println("Before modifySlice:", slice)
+	modifySlice(slice)
+	fmt.Println("After modifySlice:", slice)
+	fmt.Println("Final array:", array)
 }
