@@ -20,7 +20,7 @@ func main() {
 			close(channels[i])
 		}(i)
 	}
-	ctx, cancel := context.WithTimeout(context.Background(), time.Microsecond)
+	ctx, cancel := context.WithTimeout(context.Background(), time.Millisecond)
 	defer cancel()
 	for v := range merge(ctx, channels...) {
 		println(v)
